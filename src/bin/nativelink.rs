@@ -770,7 +770,7 @@ async fn inner_main(
         if let Some(value) = http_config.experimental_http2_max_header_list_size {
             http.http2().max_header_list_size(value);
         }
-
+        event!(Level::WARN, "This is a test upgrade for new changes",);
         event!(Level::WARN, "Ready, listening on {socket_addr}",);
         root_futures.push(Box::pin(async move {
             loop {
