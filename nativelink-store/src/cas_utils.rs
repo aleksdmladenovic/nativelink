@@ -15,6 +15,7 @@
 use nativelink_util::common::DigestInfo;
 use nativelink_util::store_trait::StoreKey;
 
+// Some changes
 pub const ZERO_BYTE_DIGESTS: [DigestInfo; 2] = [
     // Sha256 hash of zero bytes.
     DigestInfo::new(
